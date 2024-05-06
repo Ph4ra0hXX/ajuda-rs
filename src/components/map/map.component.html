@@ -1,0 +1,12 @@
+<div id="map"></div>
+
+<app-header
+  [sheltersQuantity]="sheltersQuantity"
+  (refreshShelter)="refreshShelters()"
+></app-header>
+<app-modal
+  [showModal]="visibleModal"
+  [shelter]="shelter"
+  [shelterById]="shelterById"
+  (modalClosed)="modalClosedHandler()"
+></app-modal>
